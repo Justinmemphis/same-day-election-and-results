@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import * as d3 from "d3";
+import horseImage from './horse.png';
 
 const HorizontalBarChart = ({ data }) => {
   const chartRef = useRef();
@@ -21,23 +22,26 @@ const HorizontalBarChart = ({ data }) => {
       .range([0, height])
       .padding(0.1);
 
-    svg
-      .selectAll("rect")
-      .data(sortedData)
-      .enter()
-      .append("rect")
-      .attr("x", margin.left) // Adjusted to start from the left margin
-      .attr("y", d => y(d.name))
-      .attr("width", d => x(d.vote))
-      .attr("height", y.bandwidth())
-      .attr("fill", "steelblue");
+    svg.selectAll("*").remove(); // Clear existing elements
 
     svg
-      .selectAll("text")
+      .selectAll("image") // Create image elements
+      .data(sortedData)
+      .enter()
+      .append("image")
+      .attr("x", d => margin.left + x(d.vote)) // Position the image at the end of the bar
+      .attr("y", d => y(d.name))
+      .attr("width", 20) // Adjust the width of the image as needed
+      .attr("height", y.bandwidth())
+      .attr("xlink:href", horseImage); // Set the image source
+
+    svg
+      .selectAll(".text-label")
       .data(sortedData)
       .enter()
       .append("text")
-      .attr("x", d => margin.left + x(d.vote) + 10)
+      .attr("class", "text-label")
+      .attr("x", d => margin.left + x(d.vote) + 30) // Adjusted to be right of the image
       .attr("y", d => y(d.name) + y.bandwidth() / 2)
       .attr("dy", "0.35em")
       .text(d => d.vote);
@@ -48,7 +52,7 @@ const HorizontalBarChart = ({ data }) => {
       .enter()
       .append("text")
       .attr("class", "name-label")
-      .attr("x", margin.left - 15) // Adjusted to be left of the bars
+      .attr("x", margin.left - 15)
       .attr("y", d => y(d.name) + y.bandwidth() / 2)
       .attr("dy", "0.35em")
       .attr("text-anchor", "end")
