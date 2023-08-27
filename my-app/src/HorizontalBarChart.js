@@ -25,6 +25,18 @@ const HorizontalBarChart = ({ data }) => {
     svg.selectAll("*").remove(); // Clear existing elements
 
     svg
+      .selectAll("line") // Create dashed line elements
+      .data(sortedData)
+      .enter()
+      .append("line")
+      .attr("x1", margin.left) // Starting position on the left
+      .attr("x2", d => margin.left + x(d.vote)) // Ending position
+      .attr("y1", d => y(d.name) + y.bandwidth() / 2)
+      .attr("y2", d => y(d.name) + y.bandwidth() / 2)
+      .attr("stroke", "steelblue")
+      .attr("stroke-dasharray", "3,3"); // Set the dash pattern
+
+    svg
       .selectAll("image") // Create image elements
       .data(sortedData)
       .enter()
