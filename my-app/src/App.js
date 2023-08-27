@@ -1,79 +1,50 @@
 import './App.css';
+import HorizontalBarChart from './HorizontalBarChart';
+
+const data = [
+  { name: "Carnita Atwater", vote: 57 },
+  { name: "Jennings Bernard", vote: 82 },
+  { name: "Floyd Bonner", vote: 36 },
+  { name: "Joe Brown", vote: 23 },
+  { name: "Kendra C. Calico", vote: 65 },
+  { name: "Karen Camper", vote: 91 },
+  { name: "J.W. Gibson", vote: 42 },
+  { name: "Reggie Hall", vote: 77 },
+  { name: "James Harvey", vote: 15 },
+  { name: "Willie Herenton", vote: 88 },
+  { name: "Michelle McKissack", vote: 49 },
+  { name: "Brandon A. Price", vote: 31 },
+  { name: "Justina Ragland", vote: 72 },
+  { name: "Tekeva 'Keva' Shaw", vote: 19 },
+  { name: "Van Turner", vote: 94 },
+  { name: "Derek Winn", vote: 63 },
+];
 
 function App() {
   return (
     <div className="App">
 	<h1>Race for Mayor of Memphis</h1>
-	<table>
-	  <tr>
-	    <th>Name</th>
-	    <th>Vote</th>
-	  </tr>
-	  <tr>
-	    <td>Carnita Atwater</td>
-	    <td>57</td>
-	  </tr>
-	  <tr>
-	    <td>Jennings Bernard</td>
-	    <td>82</td>
-	  </tr>
-	  <tr>
-	    <td>Floyd Bonner</td>
-	    <td>36</td>
-	  </tr>
-	  <tr>
-	    <td>Joe Brown</td>
-	    <td>23</td>
-	  </tr>
-	  <tr>
-	    <td>Kendra C. Calico</td>
-	    <td>65</td>
-	  </tr>
-	  <tr>
-	    <td>Karen Camper</td>
-	    <td>91</td>
-	  </tr>
-	  <tr>
-	    <td>J.W. Gibson</td>
-	    <td>42</td>
-	  </tr>
-	  <tr>
-	    <td>Reggie Hall</td>
-	    <td>77</td>
-	  </tr>
-	  <tr>
-	    <td>James Harvey</td>
-	    <td>15</td>
-	  </tr>
-	  <tr>
-	    <td>Willie Herenton</td>
-	    <td>88</td>
-	  </tr>
-	  <tr>
-	    <td>Michelle McKissack</td>
-	    <td>49</td>
-	  </tr>
-	  <tr>
-	    <td>Brandon A. Price</td>
-	    <td>31</td>
-	  </tr>
-	  <tr>
-	    <td>Justina Ragland</td>
-	    <td>72</td>
-	  </tr>
-	  <tr>
-	    <td>Tekeva "Keva" Shaw</td>
-	    <td>19</td>
-	  </tr>
-	  <tr>
-	    <td>Van Turner</td>
-	    <td>94</td>
-	  </tr>
-	  <tr>
-	    <td>Derek Winn</td>
-	    <td>63</td>
-	  </tr>
-	</table>
+        <div className="chart-section">
+	        <HorizontalBarChart data={data} />
+	</div>
+	<div className="table-section">
+	        <table>
+        		<thead>
+            			<tr>
+					<th>Name</th>
+					<th>Vote</th>
+				</tr>
+			</thead>
+			<tbody>
+				{data.map((entry, index) => (
+					<tr key={index}>
+						<td>{entry.name}</td>
+						<td>{entry.vote}</td>
+	        			</tr>
+				))}
+			</tbody>
+		</table>
+	</div>
 
     </div>
   );
