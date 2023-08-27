@@ -29,11 +29,14 @@ const HorizontalBarChart = ({ data }) => {
       .data(sortedData)
       .enter()
       .append("image")
-      .attr("x", d => margin.left + x(d.vote)) // Position the image at the end of the bar
+      .attr("x", margin.left) 
       .attr("y", d => y(d.name))
       .attr("width", 20) // Adjust the width of the image as needed
       .attr("height", y.bandwidth())
-      .attr("xlink:href", horseImage); // Set the image source
+      .attr("xlink:href", horseImage) // Set the image source
+      .transition()
+      .duration(3000)
+      .attr("x", d => margin.left + x(d.vote)) // final position
 
     svg
       .selectAll(".text-label")
