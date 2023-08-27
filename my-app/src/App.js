@@ -24,9 +24,9 @@ const data = [
 function App() {
   return (
     <div className="App">
-	<h1>Race for Mayor of Memphis</h1>
+	<h1 className="full-width">Race for Mayor of Memphis</h1>
 	<img src={horseImage} alt="horse" />
-        <div className="chart-section">
+        <div className="chart-section full-width">
 	        <HorizontalBarChart data={data} />
 	</div>
 	<div className="table-section">
