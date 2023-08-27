@@ -6,7 +6,7 @@ const HorizontalBarChart = ({ data }) => {
 
   useEffect(() => {
     const svg = d3.select(chartRef.current);
-    const margin = { top: 20, right: 20, bottom: 20, left: 100 };
+    const margin = { top: 20, right: 20, bottom: 20, left: 150 };
     const width = 600 - margin.left - margin.right;
     const height = 400 - margin.top - margin.bottom;
 
@@ -26,7 +26,7 @@ const HorizontalBarChart = ({ data }) => {
       .data(sortedData)
       .enter()
       .append("rect")
-      .attr("x", margin.left)
+      .attr("x", margin.left) // Adjusted to start from the left margin
       .attr("y", d => y(d.name))
       .attr("width", d => x(d.vote))
       .attr("height", y.bandwidth())
@@ -42,10 +42,22 @@ const HorizontalBarChart = ({ data }) => {
       .attr("dy", "0.35em")
       .text(d => d.vote);
 
+    svg
+      .selectAll(".name-label")
+      .data(sortedData)
+      .enter()
+      .append("text")
+      .attr("class", "name-label")
+      .attr("x", margin.left - 15) // Adjusted to be left of the bars
+      .attr("y", d => y(d.name) + y.bandwidth() / 2)
+      .attr("dy", "0.35em")
+      .attr("text-anchor", "end")
+      .text(d => d.name);
+
     svg.attr("transform", `translate(${margin.left},${margin.top})`);
   }, [data]);
 
-  return <svg ref={chartRef} width="600" height="400"></svg>;
+  return <svg ref={chartRef} width="800" height="400"></svg>;
 };
 
 export default HorizontalBarChart;
