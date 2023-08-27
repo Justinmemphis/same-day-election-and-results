@@ -1,5 +1,6 @@
 import './App.css';
 import HorizontalBarChart from './HorizontalBarChart';
+import horseImage from './horse.png';
 
 const data = [
   { name: "Carnita Atwater", vote: 57 },
@@ -24,6 +25,7 @@ function App() {
   return (
     <div className="App">
 	<h1>Race for Mayor of Memphis</h1>
+	<img src={horseImage} alt="horse" />
         <div className="chart-section">
 	        <HorizontalBarChart data={data} />
 	</div>
