@@ -1,13 +1,15 @@
 body {
 	text-align: center;
 	background-color: #003369;
-	color: white;
+	color: black;
+	font-family: "Avenir Black";
 }
 
 h1 {
 	font-weight: bold;
 	font-size: 3em;
 	background: #5d8dc0;
+	color: white;
 }
 
 table {
@@ -15,7 +17,7 @@ table {
 	width: 50%;
 	margin: auto;
 	margin-top: 20px;
-	background-color: #5d8dc0;
+	background-color: white;
 }
 
 th, td {
@@ -25,7 +27,8 @@ th, td {
 }
 
 th {
-	background-color: #7895b4;
+	background-color: #5d8dc0;
+	color: white;
 }
 
 .full-width {
