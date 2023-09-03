@@ -1,6 +1,7 @@
 import './App.css';
 import HorizontalBarChart from './HorizontalBarChart';
 import horseImage from './Donkey.png';
+import scdpLogo from './SCDP-letterhead-whitebg.png';
 
 const data = [
   { name: "Carnita Atwater", vote: 57 },
@@ -24,8 +25,8 @@ const data = [
 function App() {
   return (
     <div className="App">
+	<img src={scdpLogo} alt="SCDP Logo" />
 	<h1 className="full-width">Race for Mayor of Memphis</h1>
-	<img src={horseImage} alt="horse" />
         <div className="chart-section full-width">
 	        <HorizontalBarChart data={data} />
 	</div>
