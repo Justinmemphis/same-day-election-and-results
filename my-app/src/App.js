@@ -1,6 +1,6 @@
 import './App.css';
 import HorizontalBarChart from './HorizontalBarChart';
-import horseImage from './horse.png';
+import horseImage from './Donkey.png';
 
 const data = [
   { name: "Carnita Atwater", vote: 57 },
