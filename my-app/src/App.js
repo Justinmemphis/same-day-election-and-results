@@ -25,7 +25,7 @@ const data = [
 function App() {
   return (
     <div className="App">
-	<img src={scdpLogo} alt="SCDP Logo" />
+	<img src={scdpLogo} alt="SCDP Logo" className="headerImage" />
 	<h1 className="full-width">Race for Mayor of Memphis</h1>
         <div className="chart-section full-width">
 	        <HorizontalBarChart data={data} />
