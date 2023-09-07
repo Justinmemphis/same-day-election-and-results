@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import * as d3 from "d3";
 import horseImage from './Donkey.png';
 
-const HorizontalBarChart = ({ data }) => {
+const Chart = ({ data }) => {
   const chartRef = useRef();
 
   useEffect(() => {
@@ -79,5 +79,5 @@ const HorizontalBarChart = ({ data }) => {
   return <svg ref={chartRef} width="800" height="400"></svg>;
 };
 
-export default HorizontalBarChart;
+export default Chart;
 

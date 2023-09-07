@@ -1,5 +1,5 @@
 import './App.css';
-import HorizontalBarChart from './HorizontalBarChart';
+import Chart from './Chart';
 import horseImage from './Donkey.png';
 import scdpLogo from './SCDP-letterhead-whitebg.png';
 
@@ -28,7 +28,7 @@ function App() {
 	<img src={scdpLogo} alt="SCDP Logo" className="headerImage" />
 	<h1 className="full-width">Race for Mayor of Memphis</h1>
         <div className="chart-section full-width">
-	        <HorizontalBarChart data={data} />
+	        <Chart data={data} />
 	</div>
 	<div className="table-section">
 	        <table>
