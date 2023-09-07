@@ -1,6 +1,5 @@
 import './App.css';
 import Chart from './Chart';
-import horseImage from './Donkey.png';
 import scdpLogo from './SCDP-letterhead-whitebg.png';
 
 const data = [

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import * as d3 from "d3";
-import horseImage from './Donkey.png';
+import horseImage from './horse.png';
 
 const Chart = ({ data }) => {
   const chartRef = useRef();
