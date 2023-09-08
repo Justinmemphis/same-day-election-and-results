@@ -1,9 +1,15 @@
 import './App.css';
+import React from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import Chart from './Chart';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+//import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import scdpLogo from './SCDP-letterhead-whitebg.png';
 
-const datasets = [
+
+function App() {
+ const datasets = [
 	[
 		{ name: "Carnita Atwater", vote: 57 },
 		{ name: "Jennings Bernard", vote: 82 },
@@ -30,38 +36,34 @@ const datasets = [
   		{ name: "John Doe", vote: 3 },
   		{ name: "Jane Doe", vote: 27 },
 	]
-];
+ ];
 
-function App() {
+ const sliderSettings = {
+	 autoplay: true,
+	 dots: true,
+	 infinite: true,
+	 lazyload: true,
+	 speed: 500,
+	 slidesToShow: 1,
+	 slidesToScroll: 1,
+ };
+
+
   return (
     <div className="App">
-	      <Router>
 	  
 	<img src={scdpLogo} alt="SCDP Logo" className="headerImage" />
 	<h1 className="full-width">Race for Mayor of Memphis</h1>
-      <div>
-        <h1>Charts</h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/chart/0">Chart 1</Link>
-            </li>
-            <li>
-              <Link to="/chart/1">Chart 2</Link>
-            </li>
-            <li>
-              <Link to="/chart/2">Chart 3</Link>
-            </li>
-          </ul>
-        </nav>
-	<Routes>
+      <div className="chart-section">
+	  <h1>Charts</h1>
+        <Slider {...sliderSettings}>
           {datasets.map((subArray, index) => (
-            <Route key={index} path={`/chart/${index}`} render={() =>
-		    <Chart data={subArray} />} />
+            <div key={index}>
+              <Chart data={subArray} />
+            </div>
           ))}
-	  </Routes>
+        </Slider>
       </div>
-    </Router>
     </div>
   );
 }
