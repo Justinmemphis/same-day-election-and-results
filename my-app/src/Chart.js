@@ -7,7 +7,7 @@ const Chart = ({ data, currentSlide, title }) => { // Add the 'title' prop
 
   useEffect(() => {
     const svg = d3.select(chartRef.current);
-    const margin = { top: 30, right: 20, bottom: 20, left: 200 }; // Increased top margin for the title
+    const margin = { top: 30, right: 20, bottom: 20, left: 150 }; // Increased top margin for the title
     const width = 600 - margin.left - margin.right;
     const height = 400 - margin.top - margin.bottom;
 
@@ -26,7 +26,7 @@ const Chart = ({ data, currentSlide, title }) => { // Add the 'title' prop
 
     // Add a title text element
     svg.append("text")
-      .attr("x", width - 100)
+      .attr("x", width - 200)
       .attr("y", margin.top / 2) // Positioned above the chart
       .attr("text-anchor", "middle")
       .style("font-size", "20px")
@@ -83,9 +83,11 @@ const Chart = ({ data, currentSlide, title }) => { // Add the 'title' prop
       .attr("text-anchor", "end")
       .text(d => d.name);
 
+    svg.style("overflow", "visible");
+
     svg.attr("class", "chartClass");
 
-    svg.attr("transform", `translate(${margin.left - 100},${margin.top})`);
+    svg.attr("transform", `translate(${margin.left},${margin.top})`);
   }, [data, currentSlide, title]); // Include 'title' in dependencies
 
   return <svg ref={chartRef} width="800" height="400"></svg>;
