@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import * as d3 from "d3";
 import horseImage from './horse.png';
 
-const Chart = ({ data }) => {
+const Chart = ({ data, currentSlide }) => {
   const chartRef = useRef();
 
   useEffect(() => {
@@ -74,7 +74,7 @@ const Chart = ({ data }) => {
       .text(d => d.name);
 
     svg.attr("transform", `translate(${margin.left},${margin.top})`);
-  }, [data]);
+  }, [data, currentSlide]);
 
   return <svg ref={chartRef} width="800" height="400"></svg>;
 };

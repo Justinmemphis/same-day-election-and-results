@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -9,6 +9,9 @@ import scdpLogo from './SCDP-letterhead-whitebg.png';
 
 
 function App() {
+
+ const [currentSlide, setCurrentSlide] = useState(0);
+
  const datasets = [
 	[
 		{ name: "Carnita Atwater", vote: 57 },
@@ -46,6 +49,9 @@ function App() {
 	 speed: 500,
 	 slidesToShow: 1,
 	 slidesToScroll: 1,
+	 afterChange: (index) => {
+		 setCurrentSlide(index); 
+	 },
  };
 
 
@@ -59,7 +65,7 @@ function App() {
         <Slider {...sliderSettings}>
           {datasets.map((subArray, index) => (
             <div key={index}>
-              <Chart data={subArray} />
+              <Chart data={subArray} currentSlide={currentSlide}/>
             </div>
           ))}
         </Slider>
