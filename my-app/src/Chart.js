@@ -26,7 +26,7 @@ const Chart = ({ data, currentSlide, title }) => { // Add the 'title' prop
 
     // Add a title text element
     svg.append("text")
-      .attr("x", width / 2)
+      .attr("x", width - 100)
       .attr("y", margin.top / 2) // Positioned above the chart
       .attr("text-anchor", "middle")
       .style("font-size", "20px")
@@ -85,7 +85,7 @@ const Chart = ({ data, currentSlide, title }) => { // Add the 'title' prop
 
     svg.attr("class", "chartClass");
 
-    svg.attr("transform", `translate(${margin.left},${margin.top})`);
+    svg.attr("transform", `translate(${margin.left - 100},${margin.top})`);
   }, [data, currentSlide, title]); // Include 'title' in dependencies
 
   return <svg ref={chartRef} width="800" height="400"></svg>;
