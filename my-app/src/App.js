@@ -14,7 +14,7 @@ function App() {
 
  const datasets = [
 	 { 
-		 title: "Election for Mayor of Memphis",
+		 title: "Mayor of Memphis",
 		 data: 
 			[
 				{ name: "Carnita Atwater", vote: 57 },
@@ -36,14 +36,14 @@ function App() {
 			],
 	 },
 	 {
-		 title: "Election for City Council - District 1",
+		 title: "City Council - District 1",
 		 data: [
   				{ name: "Kimberly Kelley", vote: 1 },
   				{ name: "Rhonda Logan", vote: 3 },
 		],
 	 },
 	 {
-		 title: "Election for City Council - District 2",
+		 title: "City Council - District 2",
 		 data:
 			[
   				{ name: "Keith L. Burks", vote: 1 },
@@ -53,6 +53,108 @@ function App() {
 				{ name: "Rodanial Ray Ransom", vote: 13 },
 				{ name: "Marvin White", vote: 21 },
 			]
+	},
+	{
+		title: "City Council - District 3",
+	 	data:
+	 		[
+				{ name: "Ricky Dixon", vote: 1 },
+				{ name: "James Kirkwood", vote: 3 },
+				{ name: "Kawanias 'Kaye' McNeary", vote: 5 },
+				{ name: "Towanna C. Murphy", vote: 8 },
+				{ name: "Pearl Eva Walker", vote: 13 },
+			],
+	},
+	{
+	 	title: "City Council - District 4",
+	 	data:
+	 		[
+				{ name: "Teri Dockery", vote: 1 },
+				{ name: "Jana Swearengen-Washington", vote: 3 },
+			],
+	},
+	{
+		title: "City Council - District 5",
+		data: 
+			[
+				{ name: "Luke Hatler", vote: 1 },
+				{ name: "Meggan Wurzburg", vote: 3 },
+				{ name: "Philip Spinosa", vote: 8 },
+			],
+	},
+	{
+		title: "City Council - District 6",
+		data:
+			[
+				{ name: "Keith D Austin II", vote: 1 },
+				{ name: "Edmund H. Ford Sr", vote: 3 },
+				{ name: "Larry Hunter", vote: 5 },
+			],
+	},
+	{
+		title: "City Council - District 7",
+		data:
+			[
+				{ name: "Edward Douglas", vote: 1 },
+				{ name: "Michalyn Easter-Thomas", vote: 3 },
+				{ name: "Jimmy Hassan", vote: 5 },
+				{ name: "Jarret 'JP' Parks", vote: 8 },
+				{ name: "Dee Reed", vote: 13 },
+				{ name: "Austin Rowe", vote: 21 },
+				{ name: "Larry Springfield", vote: 34 },
+			],
+	},
+	{
+		title: "City Council - Super District 8 - Position 1",
+		data:
+			[
+				{ name: "JB Smiley Jr", vote: 1 },
+			],
+	},
+	{
+		title: "City Council - Super District 8 - Position 2",
+		data:
+			[
+				{ name: "Marion LaTroy A-Williams Jr", vote: 1 },
+				{ name: "Davin D. Clemons", vote: 3 },
+				{ name: "Janika White", vote: 5 },
+			],
+	},
+	{
+		title: "City Council - Super District 8 - Position 3",
+		data:
+			[
+				{ name: "Berlin F. Boyd", vote: 1 },
+				{ name: "Lucille Catron", vote: 3 },
+				{ name: "Yolanda Cooper-Sutton", vote: 5 },
+				{ name: "Brian Harris", vote: 8 },
+				{ name: "Damon Curry Morris", vote: 13 },
+				{ name: "Jerred Price", vote: 21 },
+				{ name: "Paul Randolph, Jr.", vote: 34 },
+			],
+	},
+	{
+		title: "City Council - Super District 9 - Position 1",
+		data: 
+			[
+				{ name: "Chase Carlisle", vote: 1 },
+				{ name: "Benji Smith", vote: 3 },
+			],
+	},
+	{
+		title: "City Council - Super District 9 - Position 2",
+		data:
+			[
+				{ name: "Ford Canale", vote: 1 },
+				{ name: "Brandon D. Washington", vote: 3 },
+			],
+	},
+	{
+		title: "City Council - Super District 9 - Position 3",
+		data:
+			[
+				{ name: "Jeff Warren", vote: 1 },
+			],
 	},
  ];
 
