@@ -13,32 +13,47 @@ function App() {
  const [currentSlide, setCurrentSlide] = useState(0);
 
  const datasets = [
-	[
-		{ name: "Carnita Atwater", vote: 57 },
-		{ name: "Jennings Bernard", vote: 82 },
-		{ name: "Floyd Bonner", vote: 36 },
-		{ name: "Joe Brown", vote: 23 },
-		{ name: "Kendra C. Calico", vote: 65 },
-		{ name: "Karen Camper", vote: 91 },
-		{ name: "J.W. Gibson", vote: 42 },
-		{ name: "Reggie Hall", vote: 77 },
-		{ name: "James Harvey", vote: 15 },
-		{ name: "Willie Herenton", vote: 88 },
-		{ name: "Michelle McKissack", vote: 49 },
-		{ name: "Brandon A. Price", vote: 31 },
-		{ name: "Justina Ragland", vote: 72 },
-		{ name: "Tekeva 'Keva' Shaw", vote: 19 },
-		{ name: "Van Turner", vote: 94 },
-		{ name: "Derek Winn", vote: 63 },
-	],
-	[
-  		{ name: "Justin", vote: 1 },
-  		{ name: "Adrienne", vote: 2 },
-	],
-	[
-  		{ name: "John Doe", vote: 3 },
-  		{ name: "Jane Doe", vote: 27 },
-	]
+	 { 
+		 title: "Election for Mayor of Memphis",
+		 data: 
+			[
+				{ name: "Carnita Atwater", vote: 57 },
+				{ name: "Jennings Bernard", vote: 82 },
+				{ name: "Floyd Bonner", vote: 36 },
+				{ name: "Joe Brown", vote: 23 },
+				{ name: "Kendra C. Calico", vote: 65 },
+				{ name: "Karen Camper", vote: 91 },
+				{ name: "J.W. Gibson", vote: 42 },
+				{ name: "Reggie Hall", vote: 77 },
+				{ name: "James Harvey", vote: 15 },
+				{ name: "Willie Herenton", vote: 88 },
+				{ name: "Michelle McKissack", vote: 49 },
+				{ name: "Brandon A. Price", vote: 31 },
+				{ name: "Justina Ragland", vote: 72 },
+				{ name: "Tekeva 'Keva' Shaw", vote: 19 },
+				{ name: "Van Turner", vote: 94 },
+				{ name: "Derek Winn", vote: 63 },
+			],
+	 },
+	 {
+		 title: "Election for City Council - District 1",
+		 data: [
+  				{ name: "Kimberly Kelley", vote: 1 },
+  				{ name: "Rhonda Logan", vote: 3 },
+		],
+	 },
+	 {
+		 title: "Election for City Council - District 2",
+		 data:
+			[
+  				{ name: "Keith L. Burks", vote: 1 },
+  				{ name: "Will Frazier", vote: 3 },
+				{ name: "Jerri Green", vote: 5 },
+				{ name: "Scott McCormick", vote: 8 },
+				{ name: "Rodanial Ray Ransom", vote: 13 },
+				{ name: "Marvin White", vote: 21 },
+			]
+	},
  ];
 
  const sliderSettings = {
@@ -61,11 +76,10 @@ function App() {
 	<img src={scdpLogo} alt="SCDP Logo" className="headerImage" />
 	<h1 className="full-width">Race for Mayor of Memphis</h1>
       <div className="chart-section">
-	  <h1>Charts</h1>
         <Slider {...sliderSettings}>
-          {datasets.map((subArray, index) => (
+          {datasets.map((dataset, index) => (
             <div key={index}>
-              <Chart data={subArray} currentSlide={currentSlide}/>
+              <Chart data={dataset.data} currentSlide={currentSlide} title={dataset.title}/>
             </div>
           ))}
         </Slider>

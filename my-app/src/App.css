@@ -40,8 +40,12 @@ th {
 
 .chart-section {
 	background-color: white;
+	font-size: 1em;
 }
 
 .headerImage {
 	height: 8em;
+};
+
+.chartClass {
 };
