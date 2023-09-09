@@ -55,7 +55,7 @@ const Chart = ({ data, currentSlide, title }) => { // Add the 'title' prop
       .attr("height", y.bandwidth())
       .attr("xlink:href", horseImage) // Set the image source
       .transition()
-      .duration(3000)
+      .duration(3000) // this is the speed of the transition - default 3000
       .attr("x", d => margin.left + x(d.vote)) // final position
 
     // these are the numeric labels to the right of the image
