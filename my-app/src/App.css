@@ -32,20 +32,24 @@ th {
 }
 
 .full-width {
-	display: block;
+	display: flex;
 	width: 70%;
 	margin: 0.75em auto;
 	padding: 0.5em;
 }
 
-.chart-section {
+.headerText {
+	padding: 0.5em;	
+}
+
+.chartSection {
 	background-color: white;
 	font-size: 1em;
 }
 
 .headerImage {
-	height: 8em;
-};
+	height: 2em;
+}
 
 .chartClass {
-};
+}

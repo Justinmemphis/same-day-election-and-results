@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Chart from './Chart';
 //import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import scdpLogo from './SCDP-letterhead-whitebg.png';
+import horseRace from './horse-race.png';
 
 
 function App() {
@@ -175,9 +175,10 @@ function App() {
   return (
     <div className="App">
 	  
-	<img src={scdpLogo} alt="SCDP Logo" className="headerImage" />
-	<h1 className="full-width">Race for Mayor of Memphis</h1>
-      <div className="chart-section">
+	<h1 className="full-width"><img src={horseRace} alt="horse race" className="headerImage" />
+	  <span className="headerText">Blue Derby Race to the Top!</span>
+	</h1>
+      <div className="chartSection">
         <Slider {...sliderSettings}>
           {datasets.map((dataset, index) => (
             <div key={index}>
