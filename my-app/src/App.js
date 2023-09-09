@@ -160,10 +160,11 @@ function App() {
 
  const sliderSettings = {
 	 autoplay: true,
+	 autoplaySpeed: 6000, // this changes how long it stays on the same slide - default 3000
 	 dots: true,
 	 infinite: true,
 	 lazyload: true,
-	 speed: 500,
+	 speed: 3000, // this changes how fast it transitions between slides - default 500
 	 slidesToShow: 1,
 	 slidesToScroll: 1,
 	 afterChange: (index) => {
