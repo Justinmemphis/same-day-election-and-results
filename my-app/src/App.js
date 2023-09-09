@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Chart from './Chart';
 //import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import horseRace from './horse-race.png';
+import ScrollingText from './ScrollingText';
 
 
 function App() {
@@ -188,6 +189,8 @@ function App() {
           ))}
         </Slider>
       </div>
+
+	  <ScrollingText />
     </div>
   );
 }
