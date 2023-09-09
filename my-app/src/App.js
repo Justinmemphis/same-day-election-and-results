@@ -17,143 +17,143 @@ function App() {
 		 title: "Mayor of Memphis",
 		 data: 
 			[
-				{ name: "Carnita Atwater", vote: 57 },
-				{ name: "Jennings Bernard", vote: 82 },
-				{ name: "Floyd Bonner", vote: 36 },
-				{ name: "Joe Brown", vote: 23 },
-				{ name: "Kendra C. Calico", vote: 65 },
-				{ name: "Karen Camper", vote: 91 },
-				{ name: "J.W. Gibson", vote: 42 },
-				{ name: "Reggie Hall", vote: 77 },
-				{ name: "James Harvey", vote: 15 },
-				{ name: "Willie Herenton", vote: 88 },
-				{ name: "Michelle McKissack", vote: 49 },
-				{ name: "Brandon A. Price", vote: 31 },
-				{ name: "Justina Ragland", vote: 72 },
-				{ name: "Tekeva 'Keva' Shaw", vote: 19 },
-				{ name: "Van Turner", vote: 94 },
-				{ name: "Derek Winn", vote: 63 },
+				{ name: "Carnita Atwater", vote: 0 },
+				{ name: "Jennings Bernard", vote: 0 },
+				{ name: "Floyd Bonner", vote: 0 },
+				{ name: "Joe Brown", vote: 0 },
+				{ name: "Kendra C. Calico", vote: 0 },
+				{ name: "Karen Camper", vote: 0 },
+				{ name: "J.W. Gibson", vote: 0 },
+				{ name: "Reggie Hall", vote: 0 },
+				{ name: "James Harvey", vote: 0 },
+				{ name: "Willie Herenton", vote: 0 },
+				{ name: "Michelle McKissack", vote: 0 },
+				{ name: "Brandon A. Price", vote: 0 },
+				{ name: "Justina Ragland", vote: 0 },
+				{ name: "Tekeva 'Keva' Shaw", vote: 0 },
+				{ name: "Van Turner", vote: 0 },
+				{ name: "Derek Winn", vote: 0 },
 			],
 	 },
 	 {
 		 title: "City Council - District 1",
 		 data: [
-  				{ name: "Kimberly Kelley", vote: 1 },
-  				{ name: "Rhonda Logan", vote: 3 },
+  				{ name: "Kimberly Kelley", vote: 0 },
+  				{ name: "Rhonda Logan", vote: 0 },
 		],
 	 },
 	 {
 		 title: "City Council - District 2",
 		 data:
 			[
-  				{ name: "Keith L. Burks", vote: 1 },
-  				{ name: "Will Frazier", vote: 3 },
-				{ name: "Jerri Green", vote: 5 },
-				{ name: "Scott McCormick", vote: 8 },
-				{ name: "Rodanial Ray Ransom", vote: 13 },
-				{ name: "Marvin White", vote: 21 },
+  				{ name: "Keith L. Burks", vote: 0 },
+  				{ name: "Will Frazier", vote: 0 },
+				{ name: "Jerri Green", vote: 0 },
+				{ name: "Scott McCormick", vote: 0 },
+				{ name: "Rodanial Ray Ransom", vote: 0 },
+				{ name: "Marvin White", vote: 0 },
 			]
 	},
 	{
 		title: "City Council - District 3",
 	 	data:
 	 		[
-				{ name: "Ricky Dixon", vote: 1 },
-				{ name: "James Kirkwood", vote: 3 },
-				{ name: "Kawanias 'Kaye' McNeary", vote: 5 },
-				{ name: "Towanna C. Murphy", vote: 8 },
-				{ name: "Pearl Eva Walker", vote: 13 },
+				{ name: "Ricky Dixon", vote: 0 },
+				{ name: "James Kirkwood", vote: 0 },
+				{ name: "Kawanias 'Kaye' McNeary", vote: 0 },
+				{ name: "Towanna C. Murphy", vote: 0 },
+				{ name: "Pearl Eva Walker", vote: 0 },
 			],
 	},
 	{
 	 	title: "City Council - District 4",
 	 	data:
 	 		[
-				{ name: "Teri Dockery", vote: 1 },
-				{ name: "Jana Swearengen-Washington", vote: 3 },
+				{ name: "Teri Dockery", vote: 0 },
+				{ name: "Jana Swearengen-Washington", vote: 0 },
 			],
 	},
 	{
 		title: "City Council - District 5",
 		data: 
 			[
-				{ name: "Luke Hatler", vote: 1 },
-				{ name: "Meggan Wurzburg", vote: 3 },
-				{ name: "Philip Spinosa", vote: 8 },
+				{ name: "Luke Hatler", vote: 0 },
+				{ name: "Meggan Wurzburg", vote: 0 },
+				{ name: "Philip Spinosa", vote: 0 },
 			],
 	},
 	{
 		title: "City Council - District 6",
 		data:
 			[
-				{ name: "Keith D Austin II", vote: 1 },
-				{ name: "Edmund H. Ford Sr", vote: 3 },
-				{ name: "Larry Hunter", vote: 5 },
+				{ name: "Keith D Austin II", vote: 0 },
+				{ name: "Edmund H. Ford Sr", vote: 0 },
+				{ name: "Larry Hunter", vote: 0 },
 			],
 	},
 	{
 		title: "City Council - District 7",
 		data:
 			[
-				{ name: "Edward Douglas", vote: 1 },
-				{ name: "Michalyn Easter-Thomas", vote: 3 },
-				{ name: "Jimmy Hassan", vote: 5 },
-				{ name: "Jarret 'JP' Parks", vote: 8 },
-				{ name: "Dee Reed", vote: 13 },
-				{ name: "Austin Rowe", vote: 21 },
-				{ name: "Larry Springfield", vote: 34 },
+				{ name: "Edward Douglas", vote: 0 },
+				{ name: "Michalyn Easter-Thomas", vote: 0 },
+				{ name: "Jimmy Hassan", vote: 0 },
+				{ name: "Jarret 'JP' Parks", vote: 0 },
+				{ name: "Dee Reed", vote: 0 },
+				{ name: "Austin Rowe", vote: 0 },
+				{ name: "Larry Springfield", vote: 0 },
 			],
 	},
 	{
 		title: "City Council - Super District 8 - Position 1",
 		data:
 			[
-				{ name: "JB Smiley Jr", vote: 1 },
+				{ name: "JB Smiley Jr", vote: 0 },
 			],
 	},
 	{
 		title: "City Council - Super District 8 - Position 2",
 		data:
 			[
-				{ name: "Marion LaTroy A-Williams Jr", vote: 1 },
-				{ name: "Davin D. Clemons", vote: 3 },
-				{ name: "Janika White", vote: 5 },
+				{ name: "Marion LaTroy A-Williams Jr", vote: 0 },
+				{ name: "Davin D. Clemons", vote: 0 },
+				{ name: "Janika White", vote: 0 },
 			],
 	},
 	{
 		title: "City Council - Super District 8 - Position 3",
 		data:
 			[
-				{ name: "Berlin F. Boyd", vote: 1 },
-				{ name: "Lucille Catron", vote: 3 },
-				{ name: "Yolanda Cooper-Sutton", vote: 5 },
-				{ name: "Brian Harris", vote: 8 },
-				{ name: "Damon Curry Morris", vote: 13 },
-				{ name: "Jerred Price", vote: 21 },
-				{ name: "Paul Randolph, Jr.", vote: 34 },
+				{ name: "Berlin F. Boyd", vote: 0 },
+				{ name: "Lucille Catron", vote: 0 },
+				{ name: "Yolanda Cooper-Sutton", vote: 0 },
+				{ name: "Brian Harris", vote: 0 },
+				{ name: "Damon Curry Morris", vote: 0 },
+				{ name: "Jerred Price", vote: 0 },
+				{ name: "Paul Randolph, Jr.", vote: 0 },
 			],
 	},
 	{
 		title: "City Council - Super District 9 - Position 1",
 		data: 
 			[
-				{ name: "Chase Carlisle", vote: 1 },
-				{ name: "Benji Smith", vote: 3 },
+				{ name: "Chase Carlisle", vote: 0 },
+				{ name: "Benji Smith", vote: 0 },
 			],
 	},
 	{
 		title: "City Council - Super District 9 - Position 2",
 		data:
 			[
-				{ name: "Ford Canale", vote: 1 },
-				{ name: "Brandon D. Washington", vote: 3 },
+				{ name: "Ford Canale", vote: 0 },
+				{ name: "Brandon D. Washington", vote: 0 },
 			],
 	},
 	{
 		title: "City Council - Super District 9 - Position 3",
 		data:
 			[
-				{ name: "Jeff Warren", vote: 1 },
+				{ name: "Jeff Warren", vote: 0 },
 			],
 	},
  ];
