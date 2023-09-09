@@ -34,12 +34,12 @@ th {
 .full-width {
 	display: flex;
 	width: 70%;
-	margin: 0.75em auto;
-	padding: 0.5em;
+	margin: 0.25em auto;
+	padding: 0.25em;
 }
 
 .headerText {
-	padding: 0.5em;	
+	padding: 0.4em;	
 }
 
 .chartSection {
