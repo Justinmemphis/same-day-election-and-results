@@ -200,6 +200,7 @@ function App() {
 		  	<DataTable data={dataset.data} title={dataset.title} />
 		  </div>
 	  ))}
+	  <div className="spacer"></div>
     </div>
   );
 }

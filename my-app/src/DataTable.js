@@ -11,7 +11,7 @@ const DataTable = ({ data, title }) => {
 	}, [data]);
 
 	return (
-		<div>
+		<div className="seventyFive">
 			<h2>{title}</h2>
 			<table>
 				<thead>
