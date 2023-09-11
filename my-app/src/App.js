@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import DataTable from './DataTable';
 import Chart from './Chart';
 //import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import horseRace from './horse-race.png';
@@ -161,8 +162,8 @@ function App() {
  ];
 
  const sliderSettings = {
-	 //autoplay: true,
-	 //autoplaySpeed: 6000, // this changes how long it stays on the same slide - default 3000
+	 autoplay: true,
+	 autoplaySpeed: 6000, // this changes how long it stays on the same slide - default 3000
 	 dots: true,
 	 infinite: true,
 	 lazyload: true,
@@ -178,7 +179,8 @@ function App() {
   return (
     <div className="App">
 	  
-	<h1 className="full-width"><img src={horseRace} alt="horse race" className="headerImage" />
+	<h1 className="full-width">
+	  <img src={horseRace} alt="horse race" className="headerImage" />
 	  <span className="headerText">Blue Derby Race to the Top!</span>
 	</h1>
       <div className="chartSection">
@@ -192,6 +194,12 @@ function App() {
       </div>
 
 	  <ScrollingText />
+
+	  {datasets.map((dataset, index) => (
+		  <div key={index}>
+		  	<DataTable data={dataset.data} title={dataset.title} />
+		  </div>
+	  ))}
     </div>
   );
 }
