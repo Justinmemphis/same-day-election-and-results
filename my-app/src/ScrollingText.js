@@ -6,7 +6,7 @@ const ScrollingText = () => {
 		<div className="scrolling-text-container">
 			<div className="scrolling-text">
 				{/* Add scrolling text content here */}
-				<span>Welcome to the Blue Derby! </span>
+				<span>Full Derby Results Below! </span>
 			</div>
 		</div>
 	);
