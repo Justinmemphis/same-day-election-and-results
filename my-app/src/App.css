@@ -70,3 +70,15 @@ th {
 .spacer {
 	height: 200px;
 }
+
+/* hide chart on mobile */
+.mobile-hide { 
+	display: none;
+}
+
+/* media query to target mobile portrait screens */
+@media (max-width: 767px) {
+	.mobile-hide {
+		display: block;
+	}
+}
