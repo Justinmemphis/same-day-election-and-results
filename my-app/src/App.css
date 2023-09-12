@@ -71,15 +71,15 @@ th {
 	height: 200px;
 }
 
-/* hide chart on mobile */
+/* display chart normally */
 .mobile-hide { 
-	display: none;
+	display: block;
 }
 
 /* media query to target mobile portrait screens */
 @media (max-width: 767px) {
 	.mobile-hide {
-		display: block;
+		display: none;
 	}
 }
 
