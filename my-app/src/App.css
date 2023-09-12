@@ -20,13 +20,14 @@ h2 {
 	color: white;
 	padding: 5px;
 	display: inline-block;
+	margin: 75px 0px 10px 0px;
 }
 
 table {
 	border-collapse: collapse;
 	width: 35%;
 	margin: auto;
-	margin-top: 20px;
+	margin-top: 0px;
 	background-color: white;
 }
 
@@ -80,6 +81,27 @@ th {
 @media (max-width: 767px) {
 	.mobile-hide {
 		display: none;
+	}
+	.full-width {
+		flex-direction: column;
+	}
+	.headerImage {
+		height: auto;
+		width: 5em;
+		margin: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	h2 {
+		font-size: 1.25em;
+		margin: 35px 0px 10px 0px;
+	}
+	table {
+		width: 70%;
+	}
+	.spacer {
+		height: 200px;
 	}
 }
 
