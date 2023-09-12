@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -13,24 +13,6 @@ import ScrollingText from './ScrollingText';
 function App() {
 
  const [currentSlide, setCurrentSlide] = useState(0);
- const [isMobilePortrait, setIsMobilePortrait] = useState(
-	 window.innerWidth <= 767
- );
-
- useEffect(() => {
-	 // Function to update the state based on screen width
-	 const handleResize = () => {
-		 setIsMobilePortrait(window.innerWidth <= 767);
-	 };
-
-	 // Add event listener for window resize
-	 window.addEventListener('resize', handleResize);
-
-	 // Remove event listener when component unmounts
-	 return () => {
-		 window.removeEventListener('resize', handleResize);
-	 };
- }, []);
 
  const datasets = [
 	 { 
@@ -201,7 +183,7 @@ function App() {
 	  <img src={horseRace} alt="horse race" className="headerImage" />
 	  <span className="headerText">Blue Derby Race to the Top!</span>
 	</h1>
-      <div className={`chartSection ${isMobilePortrait ? 'mobile-hide' : ''}`}>
+      <div className={`chartSection mobile-hide`}>
         <Slider {...sliderSettings}>
           {datasets.map((dataset, index) => (
             <div key={index}>

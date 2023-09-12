@@ -15,8 +15,10 @@ const DataTable = ({ data, title }) => {
 			<h2>{title}</h2>
 			<table>
 				<thead>
-					<th>Name</th>
-					<th>Votes</th>
+					<tr>
+						<th>Name</th>
+						<th>Votes</th>
+					</tr>
 				</thead>
 				<tbody>
 					{sortedData.map((item, index) => (
