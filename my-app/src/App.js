@@ -24,8 +24,8 @@ function App() {
 				{ name: "Floyd Bonner", vote: 0 },
 				{ name: "Joe Brown", vote: 1 },
 				{ name: "Kendra C. Calico", vote: 0 },
-				{ name: "Karen Camper", vote: 0 },
-				{ name: "J.W. Gibson", vote: 4 },
+				{ name: "Karen Camper", vote: (0 + 26) },
+				{ name: "J.W. Gibson", vote: (4 + 2) },
 				{ name: "Reggie Hall", vote: 0 },
 				{ name: "James Harvey", vote: 0 },
 				{ name: "Willie Herenton", vote: 2 },
@@ -73,7 +73,7 @@ function App() {
 	 	data:
 	 		[
 				{ name: "Teri Dockery", vote: (2 + 62) },
-				{ name: "Jana Swearengen-Washington", vote: (7 + 27) },
+				{ name: "Jana Swearengen-Washington", vote: (7 + 27 + 38) },
 			],
 	},
 	{
